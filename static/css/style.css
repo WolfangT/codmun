@@ -124,7 +124,9 @@ header .logo {
   max-width: 1200px;
   overflow: hidden;
   margin: auto;
-  padding: 60px 0;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background-image: url(../images/fondo/Union.png);
 }
 
 .container header {
@@ -132,6 +134,7 @@ header .logo {
   border-color: green;
   border-width: 10px 0 10px 0;
   text-align: center;
+  background-color: white;
 }
 
 .container header h1 {
@@ -156,10 +159,57 @@ header .logo {
   font-weight: bold;
 }
 
-.container section h2 {
+.container section h1 {
+  text-align: center;
+  padding: 0.5em;
 }
 
-.container section p {
+.display {
+  text-align: center;
+}
+
+.display h1 {
+  font-size: 3em;
+}
+
+.display .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display .content div {
+  margin: 0.5em;
+}
+
+.display .content div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display .content img {
+  width: 75%;
+}
+
+.display .content a {
+  color: green;
+  text-decoration-style: none;
+}
+
+/* Custom */
+
+#comites .content div {
+  width: 15em;
+  height: 20em;
+}
+
+#comites .content div div {
+  width: 15em;
+  height: 15em;
+  background-color: green;
+  border-radius: 50%;
 }
 
 /* Nuestro Servicio */
