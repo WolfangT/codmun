@@ -24,6 +24,11 @@ h2 {
   font-weight: normal;
 }
 
+a {
+  color: green;
+  text-decoration: none;
+}
+
 /* Cabecera */
 
 body > header {
@@ -42,14 +47,14 @@ header .top {
 
 header .top h1 {
   position: relative;
-  top: 1vh;
+  top: 0.5vh;
   left: 25vh;
   font-size: 5em;
 }
 
 header .top h2 {
   position: relative;
-  top: 1vh;
+  top: 0.5vh;
   left: 25vh;
 }
 
@@ -126,7 +131,7 @@ header .logo {
   margin: auto;
   margin-top: 120px;
   margin-bottom: 120px;
-  background-image: url(../images/fondo/Union.png);
+  background-image: url(../images/fondo/category.png);
 }
 
 .container header {
@@ -164,6 +169,16 @@ header .logo {
   padding: 0.5em;
 }
 
+.container .poster {
+  background-image: url(../images/fondo/poster.png);
+  background-color: #00ac37;
+  text-align: center;
+}
+
+.container .poster img {
+  width: 75%;
+}
+
 .display {
   text-align: center;
 }
@@ -193,11 +208,6 @@ header .logo {
   width: 75%;
 }
 
-.display .content a {
-  color: green;
-  text-decoration-style: none;
-}
-
 /* Custom */
 
 #comites .content div {
@@ -212,39 +222,7 @@ header .logo {
   border-radius: 50%;
 }
 
-/* Nuestro Servicio */
-
-.container-servicio {
-  /* background-image: url(../img/Bienvenida.png); */
-  height: 45vh;
-  width: 100.5%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.etiqueta {
-  margin: 0;
-  background-image: url(../img/texto.png);
-  height: 45vh;
-  width: 1200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.etiqueta-2 {
-  margin: 0;
-  background-image: url(../img/Senior\ Staff\ -\ Comite\ Organizador\ 2020-2021.png);
-  height: 35vh;
-  width: 1200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.gallery {
-  background: #f2f2f2;
-}
+/* viejo */
 
 .subtitulo {
   background-position: center;
@@ -260,73 +238,9 @@ header .logo {
   flex-wrap: wrap;
 }
 
-.container-galeria2 {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.CMUN {
-  align-items: center;
-  position: relative;
-}
-
-.CMUN-1 {
-  position: relative;
-  left: 25%;
-  height: 50%;
-}
-
-.CMUN-0 {
-  position: relative;
-  left: 25%;
-  top: 150px;
-  background-position: center;
-}
-
-.CMUN-2 {
-  position: relative;
-  left: 45%;
-  top: 350px;
-}
-
-.CMUN-3 {
-  position: relative;
-  top: 450px;
-  left: 25%;
-}
-
-.CMUN-4 {
-  position: relative;
-  left: 25%;
-  top: 550px;
-}
-.CMUN-5 {
-  position: relative;
-  left: 23%;
-  width: 100%;
-  top: 825px;
-}
-
-.CMUN-6 {
-  position: relative;
-  left: 33%;
-}
-
-.CMUN-7 {
-  position: relative;
-  left: 25%;
-  top: 200px;
-}
-
-.CMUN-8 {
-  position: relative;
-  left: 25%;
-  top: 300px;
-}
-
 .gallery {
   object-fit: cover;
+  background: #f2f2f2;
   width: 33%;
   display: inline-block;
   margin-bottom: 40px;
@@ -431,6 +345,8 @@ footer {
   background: #fff;
   margin-bottom: 600px;
 }
+
+/* Media updates */
 
 @media screen and (max-width: 800px) {
   .navigation {
