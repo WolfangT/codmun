@@ -35,12 +35,12 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@1.1
         with:
           # username
-          username: wolfang
+          username: "wolfang"
           # your sftp server
-          server: ws3.gtomachine.com
+          server: "ws3.gtomachine.com"
           # will put all file under this path
-          local_path: ./codmun
+          local_path: "./*"
+          # files will copy to under remote_path
+          remote_path: "/var/www/codmun"
           # secret ssh key
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          # files will copy to under remote_path
-          remote_path: /var/www/codmun
