@@ -2,13 +2,13 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,7 +30,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@1.1
         with:
@@ -40,5 +40,7 @@ jobs:
           server: ws3.gtomachine.com
           # will put all file under this path
           local_path: ./codmun
+          # secret ssh key
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           # files will copy to under remote_path
           remote_path: /var/www/codmun
