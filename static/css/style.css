@@ -230,6 +230,12 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+}
+.display .content h2,
+.display .content p {
+  width: 75%;
+  margin: auto;
 }
 
 .display .content img {
@@ -238,20 +244,15 @@ header .logo {
 
 /* Custom */
 
-#comites .content div {
-  width: 15em;
-  /* height: 20em; */
-}
-
 #comites .content div div {
-  width: 15em;
-  height: 15em;
+  width: 30vw;
+  height: 30vw;
   background-color: green;
   border-radius: 50%;
 }
 
 #razones .content img {
-  width: 22vw;
+  width: 20vw;
 }
 
 /* Media updates */
@@ -263,6 +264,16 @@ header .logo {
   .menu {
     top: 50px;
     right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #razones .content img {
+    width: 240px;
+  }
+  #comites .content div div {
+    width: 240px;
+    height: 240px;
   }
 }
 
@@ -324,13 +335,12 @@ header .logo {
     width: 100%;
   }
 
-  #comites .content div {
-    width: 10em;
-    /* height: 15em; */
+  #comites .content div div {
+    width: 12em;
+    height: 12em;
   }
 
-  #comites .content div div {
-    width: 10em;
-    height: 10em;
+  #razones .content img {
+    width: 12em;
   }
 }
