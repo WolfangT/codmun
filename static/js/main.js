@@ -7,13 +7,13 @@ const navigation = document.querySelector(".navigation");
 menu.addEventListener("click", () => {
   navigation.classList.toggle("spread");
   menu.hidden = true;
-  close_btn.hidden = false;
+  // close_btn.hidden = false;
 });
 
 close_btn.addEventListener("click", () => {
   navigation.classList.toggle("spread");
   menu.hidden = false;
-  close_btn.hidden = true;
+  // close_btn.hidden = true;
 });
 
 window.addEventListener("click", (e) => {
@@ -24,7 +24,7 @@ window.addEventListener("click", (e) => {
   ) {
     navigation.classList.toggle("spread");
     menu.hidden = false;
-    close_btn.hidden = true;
+    // close_btn.hidden = true;
   }
 });
 
