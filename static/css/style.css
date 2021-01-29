@@ -195,8 +195,13 @@ header .logo {
   margin: 1em 0;
 }
 
-.container .poster img {
+.container .poster img,
+.container .poster object {
   width: 75%;
+}
+
+.container .poster object {
+  height: 100vh;
 }
 
 .display {
@@ -298,7 +303,8 @@ header .logo {
     background-color: unset;
   }
 
-  .container .poster img {
+  .container .poster img,
+  .container .poster object {
     width: 100%;
   }
 
