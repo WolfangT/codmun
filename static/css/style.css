@@ -55,12 +55,14 @@ header .top h1 {
   top: 0.5vh;
   left: 25vh;
   font-size: 5em;
+  width: 75%;
 }
 
 header .top h2 {
   position: relative;
   top: 0.5vh;
   left: 25vh;
+  width: 75%;
 }
 
 header .logo {
@@ -249,6 +251,16 @@ header .logo {
 }
 
 /* Media updates */
+
+@media only screen and (max-height: 800px) {
+  header .top {
+    height: 60vh;
+  }
+  .menu {
+    top: 50px;
+    right: 50px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   body {
