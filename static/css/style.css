@@ -322,7 +322,7 @@ header .logo {
 
   #comites .content div {
     width: 10em;
-    height: 15em;
+    /* height: 15em; */
   }
 
   #comites .content div div {
