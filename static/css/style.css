@@ -222,7 +222,7 @@ header .logo {
   align-items: center;
 }
 
-.display .content div {
+.display .content > div {
   margin: 0.5em;
 }
 
@@ -240,7 +240,7 @@ header .logo {
 
 #comites .content div {
   width: 15em;
-  height: 20em;
+  /* height: 20em; */
 }
 
 #comites .content div div {
@@ -248,6 +248,10 @@ header .logo {
   height: 15em;
   background-color: green;
   border-radius: 50%;
+}
+
+#razones .content img {
+  width: 22vw;
 }
 
 /* Media updates */
