@@ -152,7 +152,7 @@ header .logo {
   margin: auto;
   margin-top: 120px;
   margin-bottom: 120px;
-  background-image: url(../images/fondo/category.png);
+  /* background-image: url(../images/fondo/category.png); */
 }
 
 .container header {
