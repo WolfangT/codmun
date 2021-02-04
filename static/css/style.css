@@ -355,3 +355,33 @@ header .logo {
     width: 12em;
   }
 }
+
+#contador {  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5rem;
+  top: 200px;
+}
+
+#contador div {   
+  border: 2px #0cac07 solid;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.671);
+  opacity: 0.75;
+  margin: 25px;
+  color: white;
+  width:200px;
+}
+
+
+#contador .texto {
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  background-color:#0cac07;
+  width:100%;
+  font-weight:600;
+}
