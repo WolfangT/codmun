@@ -77,6 +77,7 @@ header .logo {
 /* Menu */
 
 .menu {
+  z-index: 2;
   position: fixed;
   top: 65px;
   right: 120px;
