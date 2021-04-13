@@ -206,12 +206,9 @@ header .logo {
   width: 75%;
 }
 
-.container .poster object {
-  height: 100vh;
-}
-
 .container .poster object embed {
   width: 100%;
+  height: 100vh;
 }
 
 .poster a {
