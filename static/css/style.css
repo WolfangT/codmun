@@ -34,7 +34,7 @@ a {
 
 body > header {
   height: 75vh;
-  background-image: url(../images/fondo/maristas.png);
+  background-image: url(../imagenes/fondo/maristas.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -154,7 +154,7 @@ header .logo {
   margin: auto;
   margin-top: 120px;
   margin-bottom: 120px;
-  background-image: url(../images/fondo/category.svg);
+  background-image: url(../imagenes/fondo/category.svg);
   background-size: 100%;
   object-fit: contain;
 }
@@ -195,7 +195,7 @@ header .logo {
 }
 
 .container .poster {
-  background-image: url(../images/fondo/poster.png);
+  background-image: url(../imagenes/fondo/poster.png);
   background-color: #00ac37;
   text-align: center;
   margin: 1em 0;
@@ -284,7 +284,6 @@ header .logo {
     width: 240px;
     height: 240px;
   }
-  
 
   header #contador {
     position: relative;
@@ -292,7 +291,7 @@ header .logo {
     padding: 0;
     background-size: initial;
   }
-  
+
   header #contador div {
     width: 80%;
   }
@@ -383,32 +382,30 @@ header .logo {
     height: 10%;
     display: flex;
     top: 40%;
-
   }
-  
-  header > .countdown div{
+
+  header > .countdown div {
     position: relative;
     width: 50%;
     background-size: cover;
     font-size: 2.5em;
-    
   }
 
   header > .countdown #dias:before {
     width: 100%;
     top: 75px;
   }
-  
+
   header > .countdown #horas:before {
     width: 100%;
     top: 75px;
   }
-  
+
   header > .countdown #minutos:before {
     width: 100%;
     top: 75px;
   }
-  
+
   header > .countdown #segundos:before {
     width: 100%;
     top: 75px;
@@ -427,7 +424,6 @@ header .logo {
   height: 135px;
   top: 45%;
   position: relative;
-
 }
 
 .countdown div {
@@ -442,10 +438,10 @@ header .logo {
   font-size: 3em;
   font-weight: 500;
   object-fit: cover;
-  }
+}
 
 .countdown div:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -30px;
   left: 0;
@@ -453,129 +449,126 @@ header .logo {
   height: 35px;
   background: rgb(15, 173, 15);
   color: #fff;
-  font-size: .4em;
+  font-size: 0.4em;
   line-height: 35px;
   font-weight: 600;
   font-family: "Arvo", serif;
   object-fit: cover;
 }
 
-
 .countdown #dias:before {
-  content: 'Dias';
+  content: "Dias";
   width: 100%;
   object-fit: cover;
 }
 
 .countdown #horas:before {
-  content: 'Horas';
+  content: "Horas";
   width: 100%;
   object-fit: cover;
 }
 
 .countdown #minutos:before {
-  content: 'Minutos';
+  content: "Minutos";
   width: 100%;
   object-fit: cover;
 }
 
 .countdown #segundos:before {
-  content: 'Segundos';
+  content: "Segundos";
   width: 100%;
   object-fit: cover;
 }
 
 /*-------------- Galeria de imagenes--------------------*/
 
-
-
 .galeria {
-	display: flex;
-	width: 88%;
-	margin: auto;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	z-index: 1;
+  display: flex;
+  width: 88%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
 .galeria .foto {
   top: 45px;
-	width: 400px;
-	height: 400px;
-	position: relative;
-	margin-bottom: 35px;
-	border-radius: 5px;
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	transition: 0.6s ease;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.6s ease;
 }
 .galeria .foto:hover {
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .foto img {
-	width: 400px;
-	height: 400px;
-	object-fit: cover;
-	border-radius: 5px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .overlay {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background-image:  linear-gradient(
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
     -225deg,
     #18b425 0%,
     #087428 50%,
     #157540 100%
   );
-  opacity: .85;
-	width: 100%;
-	height: 0;
-	transition: 0.55s ease;
-	overflow: hidden;
+  opacity: 0.85;
+  width: 100%;
+  height: 0;
+  transition: 0.55s ease;
+  overflow: hidden;
 }
 .overlay h2 {
-	color: hsl(110, 9%, 87%);
-	font-size: 22.5px;
-	font-family: 'Rubik', sans-serif;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	text-align: center;
-	transform: translate(-50%, -50%);
+  color: hsl(110, 9%, 87%);
+  font-size: 22.5px;
+  font-family: "Rubik", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 .foto:hover .overlay {
-	height: 100%;
-	cursor: pointer;
-	border-radius: 5px;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /*---------------------*/
 
 .contenedor-modal.active {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	top: 0;
-	left: 0;
-	z-index: 2;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 .contenedor-modal.active img {
-	z-index: 3;
-	width: 700px;
-	height: 700px;
+  z-index: 3;
+  width: 700px;
+  height: 700px;
 }
 
 .contenedor-modal.active::after {
-	position: fixed;
-	content: '';
-	width: 100vw;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	background-color: rgba(211, 211, 211, 0.459);
+  position: fixed;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(211, 211, 211, 0.459);
 }
